@@ -5,7 +5,8 @@ Foi criado com a intenção de facilitar a obtenção dos dados em tabelas cuja 
 ### **Exemplo**
 Entrada:
 filename = file.txt
-```id
+```
+id
 produto
 preco
 1
@@ -13,9 +14,11 @@ grampeador
 16.00
 2
 caneta
-5.00```
-
+5.00
+```
 Saída = file.csv
-```id,produto,preco
+```
+id,produto,preco
 1,grampeador,16.00
-2,caneta,5.00```
+2,caneta,5.00
+```
