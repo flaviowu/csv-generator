@@ -16,7 +16,7 @@ grampeador
 caneta
 5.00
 ```
-Saída = file.csv
+Saída: filename = file.csv
 ```
 id,produto,preco
 1,grampeador,16.00
