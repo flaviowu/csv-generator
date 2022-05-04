@@ -1,6 +1,6 @@
 # **csv-generator**
 Um script em python para gerar arquivos csv a partir de txt em que os registros estejam em uma coluna.
-Foi criado com a intenção de facilitar a obtenção dos dados em tabelas cuja cópia para analisar com o Pandas/Python era trabalhosa.
+Foi criado com a intenção de facilitar a obtenção dos dados em tabelas cuja cópia para analisar com o Pandas/Python era trabalhosa demais.
 
 ### **Exemplo**
 Entrada:
