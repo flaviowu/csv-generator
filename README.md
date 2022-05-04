@@ -1,24 +1,26 @@
 # **csv-generator**
-Um script em python para gerar arquivos csv a partir de txt em que os registros estejam em uma coluna.
-Foi criado com a intenção de facilitar a obtenção dos dados em tabelas cuja cópia para analisar com o Pandas/Python era trabalhosa demais.
 
-### **Exemplo**
-Entrada:
-filename = file.txt
+Script em Python para gerar um arquivo .CSV a partir de um arquivo TXT.
+O TXT deve ter o número de colunas nos dois últimos de seu nome, como uma forma de metadados.
+
+**Exemplo**: arquivo_05.txt -> este arquivo terá 05 colunas.
+        
+O arquivo deve também ter os valores todos em uma linha apenas.
+        
+Ex:
+Entrada: filename = arquivo_02.txt
 ```
-id
-produto
+fruta
 preco
-1
-grampeador
-16.00
-2
-caneta
-5.00
+maça
+1.5
+pera
+1.8
 ```
-Saída: filename = file.csv
+
+Saida: filename = arquivo_02.csv
 ```
-id,produto,preco
-1,grampeador,16.00
-2,caneta,5.00
+fruta,preco
+maça,1.5
+pera,1.8
 ```

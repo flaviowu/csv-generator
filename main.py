@@ -1,9 +1,10 @@
 import csv
 
 
-def main():
-    filename = 'filename'
-    columns = filename[-1:-2]
+def get_csv(filename: str):
+    len_filename = len(filename)
+    columns = int(filename[len_filename - 2:len_filename])
+    print(columns)
 
     with open(f'{filename}.txt', encoding='UTF-8') as f:
         lines = f.readlines()
@@ -11,7 +12,7 @@ def main():
     new_lines = []
     new_line = []
     for i in range(len(lines)):
-        lines[i] = lines[i].rstrip()
+        lines[i] = lines[i].rstrip().replace(',', '.')
         if len(new_line) < columns:
             new_line.append(lines[i])
         elif len(new_line) >= columns:
@@ -23,4 +24,4 @@ def main():
         writer.writerows(new_lines)
 
 
-main()
+get_csv('filename_col')  # edit filename_col
