@@ -2,9 +2,7 @@ import csv
 
 
 def get_csv(filename: str):
-    len_filename = len(filename)
-    columns = int(filename[len_filename - 2:len_filename])
-    print(columns)
+    columns = int(filename.split('_')[-1])
 
     with open(f'{filename}.txt', encoding='UTF-8') as f:
         lines = f.readlines()
